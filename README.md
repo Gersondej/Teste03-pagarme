@@ -9,7 +9,7 @@ Repositorio para testar a criação de planos e assinaturas utilizando a api do 
 
 A aplicação irá rodar na porta 3000.
 
-Os endpoint são:
+### Os endpoint são:
 
 
 * Visualizar planos existentes: GET `http://localhost:3000/planos`
