@@ -16,7 +16,6 @@ app.use(cors({origin: 'http://localhost:8000'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-// app.use('/imagens',express.static('imagens'));
 
 app.get('/', (req,res) => {
     res.send('OK');
