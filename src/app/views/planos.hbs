@@ -1,0 +1,35 @@
+<div class="ui vertical segment">
+    <div class="ui grid container ">
+        <div class="eight wide column">
+            <h1 class="ui header">Planos</h1>
+        </div>
+    </div>
+</div>
+
+<div class="ui basic segment">
+    <div class="ui container">    
+        <table class="ui striped table">
+            <thead>
+                <tr>
+                    <th>ID Plano</th>
+                    <th>Nome do Plano</th>
+                    <th>Quantidade</th>
+                    {{!--<th class="center aligned">Ações</th>--}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each plans}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{amount}}</td>
+                    {{!--<td class="center aligned">
+                        <a href="#" class="ui mini orange button">Antecipar</a>
+                    </td>--}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+

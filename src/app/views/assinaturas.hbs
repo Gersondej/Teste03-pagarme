@@ -1,0 +1,39 @@
+<div class="ui vertical segment">
+    <div class="ui grid container ">
+        <div class="eight wide column">
+            <h1 class="ui header">Assinaturas</h1>
+        </div>
+    </div>
+</div>
+
+<div class="ui basic segment">
+    <div class="ui container">    
+        <table class="ui striped table">
+            <thead>
+                <tr>
+                    <th>ID Assinatura</th>
+                    <th>ID Plano</th>
+                    <th>Nome do Plano</th>
+                    <th>Status</th>
+                    <th>Meio Pgto</th>
+                    {{!--<th class="center aligned">Ações</th>--}}
+                </tr>
+            </thead>
+            <tbody>
+                {{#each subscriptions}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{plan.id}}</td>
+                    <td>{{plan.name}}</td>
+                    <td>{{status}}</td>
+                    <td>{{payment_method}}</td>
+                    {{!--<td class="center aligned">
+                        <a href="#" class="ui mini orange button">Antecipar</a>
+                    </td>--}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+
