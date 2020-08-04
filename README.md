@@ -17,8 +17,8 @@ Corpo necessário:
     ```javascript
     {
         "name": "Nome do plano",
-        "days": Prazo, em dias, para cobrança das parcelas,
-        "amount": Valor que será cobrado recorrentemente (em centavos)
+        "days": "Prazo, em dias, para cobrança das parcelas (int)",
+        "amount": "Valor que será cobrado recorrentemente (em centavos) (int)"
     }
     ```
 * Visualizar assinaturas: GET `http://localhost:3000/assinaturas`
@@ -26,15 +26,15 @@ Corpo necessário:
 Corpo necessário: 
     ```javascript
     {
-        "plan_id": Id de um plano existente,
-        "card_number": Nrm do cartao,
-        "card_cvv": cvv do cartao,
+        "plan_id": "Id de um plano existente (int)",
+        "card_number": "Nrm do cartao (int)",
+        "card_cvv": "cvv do cartao (int)",
         "card_holder_name": "Nome impresso no cartao",
-        "card_expiration_date": data de venc. do cartao (ex. 1222),
+        "card_expiration_date": "data de venc. do cartao (ex. 1222) (int)",
         "customer": {
             "email": "email do cliente",
             "name": "nome do cliente",
-            "document_number": documento do cliente
+            "document_number": "documento do cliente (int)"
         }
     }
     ```
