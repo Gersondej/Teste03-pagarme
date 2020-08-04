@@ -25,6 +25,7 @@ router.get('/', function (req, res, next) {
                 'status':element.status,
                 'payment_method':element.payment_method,
                 'customer_name':element.customer.name,
+                'link':element.manage_url
         }
         }))
         // Vamos fazer o render de uma página com o JSON retornado pela API 
