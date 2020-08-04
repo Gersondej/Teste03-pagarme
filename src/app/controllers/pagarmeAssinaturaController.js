@@ -21,7 +21,7 @@ router.get('/', function (req, res, next) {
                 'id':element.id,
                 'plan_id':element.plan.id,
                 'plan_name':element.plan.name,
-                'plan_amount':element.plan.amount.toLocaleString("pt-BR", {style: 'currency', currency: 'BRL' }),
+                'plan_amount':(element.plan.amount/100).toLocaleString("pt-BR", {style: 'currency', currency: 'BRL' }),
                 'status':element.status,
                 'payment_method':element.payment_method,
                 'customer_name':element.customer.name,

@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
             return{
                 'id':element.id,
                 'name':element.name,
-                'amount':element.amount.toLocaleString("pt-BR", {style: 'currency', currency: 'BRL' }),
+                'amount':(element.amount/100).toLocaleString("pt-BR", {style: 'currency', currency: 'BRL' }),
         }
         }))
         // Vamos fazer o render de uma página com o JSON retornado pela API 
