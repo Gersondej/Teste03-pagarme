@@ -1,5 +1,5 @@
 # pagarme-api
-Repositorio para testar a criação de planos e assinaturas utilizando a api do Pagar.me.
+Repositório para testar a criação de planos e assinaturas utilizando a api do Pagar.me.
 
 ### Para rodar:
 
@@ -7,13 +7,13 @@ Repositorio para testar a criação de planos e assinaturas utilizando a api do 
 2) Faça `npm install` no diretorio raiz
 3) Inicie com `node src/index.js`
 
-A aplicação irá rodar na porta 3000.
+A aplicação irá rodar em http://localhost:3000.
 
-### Os endpoint são:
+### Os endpoints são:
 
 
 * Visualizar planos existentes: GET `http://localhost:3000/planos`
-* Criar um novo plano: POST `http://localhost:3000/planos`
+* Criar um novo plano: POST `http://localhost:3000/planos`.
 Corpo necessário: 
     ```javascript
     {
@@ -23,7 +23,7 @@ Corpo necessário:
     }
     ```
 * Visualizar assinaturas: GET `http://localhost:3000/assinaturas`
-* Criar nova assinatura (Necessita de um plano criado): POST `http://localhost:3000/assinaturas`
+* Criar nova assinatura (Necessita de um plano criado): POST `http://localhost:3000/assinaturas`.
 Corpo necessário: 
     ```javascript
     {
