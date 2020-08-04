@@ -40,7 +40,6 @@ router.get('/', function (req, res, next) {
 
 
 router.post('/', function (req, res, next) {
-    if(!plan) return;
     var form_data = req.body;
     // Cria uma conexão com o Pagar.me 
     pagarme.client.connect({
