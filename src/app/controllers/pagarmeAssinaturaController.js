@@ -3,7 +3,6 @@ var express = require('express');
 var JSONFormatter = require('json-format');
 var config = require('../../config/pagarme.json');
 const router = express.Router();
-var plan;
 
 router.get('/', function (req, res, next) {
     // Cria uma conexão com o Pagar.me 
