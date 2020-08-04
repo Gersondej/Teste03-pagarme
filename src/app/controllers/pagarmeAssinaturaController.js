@@ -12,15 +12,6 @@ router.get('/', function (req, res, next) {
         })
         // Usa a conexão com o Pagar.me para criar uma transação
         .then(client => {
-            // Antes de criar Assinaturas a gente precisa ter um Plano
-            if(!plan) {
-                // Vamos criar um Plano de exemplo
-                client.plans.create({
-                    'name': 'Plano teste',
-                    'days': 30,
-                    'amount': 1000
-                }).then(local_plan => plan = local_plan);
-            }
             // client.plans.find({id:'495824'}).then(console.log())
             return client.subscriptions.all()
         })
@@ -54,7 +45,7 @@ router.post('/', function (req, res, next) {
             "card_expiration_date": form_data.card_expiration_date,
             "customer": {
                 "email": form_data.customer.email,
-                "name": form_data.customer.card_holder_name,
+                "name": form_data.customer.name,
                 "document_number": form_data.customer.document_number
             }
         }))
