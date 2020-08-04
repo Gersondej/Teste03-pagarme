@@ -12,7 +12,7 @@ Os endpoint são:
 
 
 * Visualizar planos existentes: GET `http://localhost:3000/planos`
-* Criar um novo plano: POST `http://localhost:3000/plano`
+* Criar um novo plano: POST `http://localhost:3000/planos`
 Corpo necessário: 
     ```javascript
     {
