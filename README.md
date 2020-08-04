@@ -14,15 +14,18 @@ Os endpoint são:
 * Visualizar planos existentes: GET `http://localhost:3000/planos`
 * Criar um novo plano: POST `http://localhost:3000/plano`
 Corpo necessário: 
-    ```{
+    ```javascript
+    {
         "name": "Nome do plano",
         "days": Prazo, em dias, para cobrança das parcelas,
         "amount": Valor que será cobrado recorrentemente (em centavos)
-    }```
+    }
+    ```
 * Visualizar assinaturas: GET `http://localhost:3000/assinaturas`
 * Criar nova assinatura assinaturas (Necessita de um plano criado): POST `http://localhost:3000/assinaturas`
 Corpo necessário: 
-    ```{
+    ```javascript
+    {
         "plan_id": Id de um plano existente,
         "card_number": Nrm do cartao,
         "card_cvv": cvv do cartao,
@@ -33,6 +36,7 @@ Corpo necessário:
             "name": "nome do cliente",
             "document_number": documento do cliente
         }
-    }```
+    }
+    ```
 
 
