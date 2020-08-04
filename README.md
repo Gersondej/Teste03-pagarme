@@ -6,7 +6,7 @@
 2) Faça `npm install` no diretorio raiz
 3) Inicie com `node src/index.js`
 
-A aplicação era rodar na porta 3000.
+A aplicação irá rodar na porta 3000.
 
 Os endpoint são:
 
