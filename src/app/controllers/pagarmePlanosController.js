@@ -3,7 +3,6 @@ var express = require('express');
 var JSONFormatter = require('json-format');
 var config = require('../../config/pagarme.json');
 const router = express.Router();
-var plan;
 
 router.get('/', function (req, res, next) {
     // Cria uma conexão com o Pagar.me 
@@ -15,6 +14,13 @@ router.get('/', function (req, res, next) {
             
             return client.plans.all()
         })
+        .then(plans => plans.map(element => {
+            return{
+                'id':element.id,
+                'name':element.name,
+                'amount':element.amount.toLocaleString("pt-BR", {style: 'currency', currency: 'BRL' }),
+        }
+        }))
         // Vamos fazer o render de uma página com o JSON retornado pela API 
         .then(plans => res.render('planos',{
             plans: plans
