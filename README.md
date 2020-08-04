@@ -1,4 +1,5 @@
 # pagarme-api
+Repositorio para testar a criação de planos e assinaturas utilizando a api do Pagar.me.
 
 ### Para rodar:
 
